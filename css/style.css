@@ -1,18 +1,46 @@
+html {
+  /* Reset para rems 62.5% = 10px */
+  font-size: 62.5%;
+}
 body {
   font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
 }
 /* Globales*/
 .contenedor {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
-/* HEADER */
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.6rem;
+}
+/* HEADER, selecciona ambos */
 .site-header.inicio {
   background-image: url(../assets/img/header.jpg);
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  min-height: 600px;
+  min-height: 60rem;
+}
+.contenido-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenido-header h1 {
+  color: #ddd;
+  padding-bottom: 2rem;
+  max-width: 60rem;
 }
 .barra {
   display: flex;
@@ -20,14 +48,15 @@ body {
   align-items: center;
   /*Horizantalmente */
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 3rem;
+  line-height: 2;
 }
 /* NAVEGACION */
 .navegacion a {
   color: #ddd;
   text-decoration: none;
-  font-size: 18px;
-  margin-right: 20px;
+  font-size: 1.8rem;
+  margin-right: 2rem;
 }
 .navegacion a:hover {
   color: #71b100;
