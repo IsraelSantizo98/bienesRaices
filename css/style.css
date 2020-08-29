@@ -5,10 +5,17 @@
   --colorBorderCard: #b5b5b5;
   --backgroundCard: #f5f5f5;
   --colorPrecio: #71b100;
+  --colorContacto: #ddd;
 }
 html {
   /* Reset para rems 62.5% = 10px */
+  box-sizing: border-box;
   font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 body {
   font-family: "Lato", sans-serif;
@@ -38,6 +45,12 @@ img {
 /*Botones*/
 .boton {
   color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: centers;
 }
 .boton-amarillo {
   background-color: #e08709;
@@ -55,6 +68,9 @@ img {
 }
 .centrar-texto {
   text-align: center;
+}
+.d-block {
+  display: block !important;
 }
 /* HEADER, selecciona ambos */
 .site-header.inicio {
@@ -129,4 +145,37 @@ img {
 .precio {
   color: var(--colorPrecio);
   font-weight: 700;
+}
+.iconos-caracteristicas {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.iconos-caracteristicas li {
+  /* flex: 1; */
+  display: flex;
+}
+.iconos-caracteristicas li img {
+  margin-right: 2rem;
+}
+.ver-todas {
+  display: flex;
+  justify-content: flex-end;
+}
+/*Contacto Home*/
+.imagen-contacto {
+  background-image: url(../assets/img/encuentra.jpg);
+  background-position: center center;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+.contenido-contacto {
+  /*Es el facto de crecimiento, detecta el tamaño disponible cuantos elementos hay y divide al tamaño total entre el numero de elementos*/
+  flex: 1;
+  color: var(--colorContacto);
+}
+.contenido-contacto p {
+  font-size: 1.8rem;
 }
