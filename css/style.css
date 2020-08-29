@@ -1,3 +1,11 @@
+:root {
+  --colorHeaderH1: #ddd;
+  --colorHeaderNav: #ddd;
+  --colorHeaderNavHover: #71b100;
+  --colorBorderCard: #b5b5b5;
+  --backgroundCard: #f5f5f5;
+  --colorPrecio: #71b100;
+}
 html {
   /* Reset para rems 62.5% = 10px */
   font-size: 62.5%;
@@ -27,6 +35,16 @@ h4 {
 img {
   max-width: 100%;
 }
+/*Botones*/
+.boton {
+  color: #fff;
+}
+.boton-amarillo {
+  background-color: #e08709;
+}
+.boton-verde {
+  background-color: #71b100;
+}
 /*Utilidades*/
 .seccion {
   margin-top: 2rem;
@@ -53,7 +71,7 @@ img {
   justify-content: space-between;
 }
 .contenido-header h1 {
-  color: #ddd;
+  color: var(--colorHeaderH1);
   padding-bottom: 2rem;
   max-width: 60rem;
 }
@@ -68,13 +86,13 @@ img {
 }
 /* NAVEGACION */
 .navegacion a {
-  color: #ddd;
+  color: var(--colorHeaderNav);
   text-decoration: none;
   font-size: 1.8rem;
   margin-right: 2rem;
 }
 .navegacion a:hover {
-  color: #71b100;
+  color: var(--colorHeaderNavHover);
 }
 .navegacion a:last-of-type {
   margin: 0;
@@ -98,8 +116,8 @@ img {
 }
 .anuncio {
   flex-basis: calc(33.3% - 1rem);
-  border: 1px solid #b5b5b5;
-  background-color: #f5f5f5;
+  border: 1px solid var(--colorBorderCard);
+  background-color: var(--backgroundCard);
 }
 .contenido-anuncio {
   padding: 2rem;
@@ -107,4 +125,8 @@ img {
 .contenido-anuncio h3,
 .contenido-anuncio p {
   margin: 0;
+}
+.precio {
+  color: var(--colorPrecio);
+  font-weight: 700;
 }
