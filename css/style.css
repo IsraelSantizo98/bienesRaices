@@ -300,3 +300,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+/*Contacto*/
+label {
+  display: block;
+}

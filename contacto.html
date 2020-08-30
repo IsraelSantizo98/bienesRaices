@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bienes Raices</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="contenedor contenido-header">
+        <div class="barra">
+          <a href="/">
+            <img src="assets/img/logo.svg" alt="Logo de bienes raices" />
+          </a>
+          <nav class="navegacion">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <h1 class="fw-300 centrar-texto">Contacto</h1>
+    <img src="assets/img/destacada3.jpg" alt="Imagen principal" />
+    <main class="contenedor seccion contenido-centrado">
+      <h2 class="fw-300 centrar-texto">Llenar el formulario de contacto</h2>
+      <form action="">
+        <fieldset>
+          <legend>Informacion Personal</legend>
+          <label for="nombre">Nombre:</label>
+          <!--Value sirve para colocar datos traidos de la BD  -->
+          <input type="text" id="nombre" placeholder="Tu Nombre" value="" />
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Tu Correo Electronico"
+            required
+          />
+          <label for="telefono">Telefono: </label>
+          <input type="tel" id="telefono" placeholder="Tu Telefono" required />
+          <label for="mensaje">Mensaje:</label>
+          <!--name es para leerlo desde el backend, las cols y rows definirlas en css-->
+          <textarea name="" id="mensaje" cols="" rows=""></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Informacion sobre la Propiedad</legend>
+        </fieldset>
+        <input type="submit" value="" />
+      </form>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer seccion">
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Anuncios</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+        <p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
+      </div>
+    </footer>
+  </body>
+</html>
