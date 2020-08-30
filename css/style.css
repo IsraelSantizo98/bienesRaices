@@ -9,6 +9,8 @@
   --colorTitleBlog: #000;
   --pseudoBlog: #71b100;
   --colorSpanBlog: #e08709;
+  --colorBackgroundTestimoniales: #71b100;
+  --colorTextTesTimoniales: #ddd;
 }
 html {
   /* Reset para rems 62.5% = 10px */
@@ -225,4 +227,26 @@ img {
 }
 .texto-entrada span {
   color: var(--colorSpanBlog);
+}
+/*Testimoniales*/
+.testimonial {
+  background-color: var(--colorBackgroundTestimoniales);
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: var(--colorTextTesTimoniales);
+  border-radius: 2rem;
+}
+.testimonial p {
+  text-align: right;
+}
+.testimonial blockquote::before {
+  content: "";
+  background-image: url(../assets/img/comilla.svg);
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: -2rem;
+}
+.testimonial blockquote {
+  position: relative;
 }
