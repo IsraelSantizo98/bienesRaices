@@ -249,4 +249,6 @@ img {
 }
 .testimonial blockquote {
   position: relative;
+  padding-left: 5rem;
+  font-weight: 300;
 }
