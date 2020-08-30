@@ -140,11 +140,16 @@ img {
 .contenedor-anuncios {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .anuncio {
-  flex-basis: calc(33.3% - 1rem);
+  /* flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(33.3% - 1rem); */
+  flex: 0 0 calc(33.3% - 1rem);
   border: 1px solid var(--colorBorderCard);
   background-color: var(--backgroundCard);
+  margin-bottom: 2rem;
 }
 .contenido-anuncio {
   padding: 2rem;
