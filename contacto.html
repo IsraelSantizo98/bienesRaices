@@ -52,8 +52,33 @@
         </fieldset>
         <fieldset>
           <legend>Informacion sobre la Propiedad</legend>
+          <label for="opciones">Vende o compra</label>
+          <select name="" id="opciones">
+            <!--Los Value son lo que se envia al backend al seleccionar alguna accion-->
+            <option value="" disabled selected>--Seleccione--</option>
+            <option value="Compra">Compra</option>
+            <option value="Vende">Vende</option>
+          </select>
+          <label for="cantidad">Cantidad:</label>
+          <!--Step es de cuanto se aumenta el contador de 2 en 2 o de 5 en 5 -->
+          <input type="number" id="cantidad" min="0" />
         </fieldset>
-        <input type="submit" value="" />
+        <fieldset>
+          <legend>Contacto</legend>
+          <p>Como desea ser contactado:</p>
+          <div class="forma-contacto">
+            <label for="celular">Telefono</label>
+            <input type="radio" name="contacto" value="celular" id="celular" />
+            <label for="correo">E-mail</label>
+            <input type="radio" name="contacto" value="correo" id="correo" />
+          </div>
+          <p>Si eligio Telefono, elija la fecha y la hora</p>
+          <label for="fecha">Fecha:</label>
+          <input type="date" name="" id="fecha" />
+          <label for="hora">Hora:</label>
+          <input type="time" name="" id="hora" min="09:00" max="18:00" />
+        </fieldset>
+        <input type="submit" value="Enviar" class="boton boton-verde" />
       </form>
     </main>
     <!-- Footer -->
